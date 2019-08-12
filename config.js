@@ -8,7 +8,7 @@ var config = {
 		"zoomControl": false
 	},
 	"about": {
-		"title": "Bootleaf application template",
+		"title": "Demo Preview for KKHL WebGIS App from Seanode Layers",
 		"contents": "<p>This is an open-source version of the excellent <a href='https://github.com/bmcbride/bootleaf'>Bootleaf map </a>started by Bryan McBride.</p><p>It's designed for rapid web map development. See <a href='https://github.com/iag-geo/bootleaf'>https://github.com/iag-geo/bootleaf</a> for more information.</p><p>Chage this message in the config file</p>"
 	},
 	"controls": {
