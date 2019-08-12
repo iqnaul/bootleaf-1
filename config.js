@@ -1,9 +1,9 @@
 var config = {
-	"title": "Bootleaf template map",
+	"title": "Test Workspace",
 	"start": {
 		// "maxZoom": 16,
-		"center": [38.203,-99.799],
-		"zoom": 4,
+		"center": [0.6712483,116.226865],
+		"zoom": 5,
 		"attributionControl": true,
 		"zoomControl": false
 	},
@@ -39,10 +39,10 @@ var config = {
 			"places": [
 				{
 				"latlng": [
-					40.7916, -73.9924
+					-6.229728, 106.6894311
 				],
 				"zoom": 12,
-				"name": "Manhattan",
+				"name": "Jakarta",
 				"id": "a148fa354ba3",
 				"editable": true,
 				"removable": true
@@ -75,12 +75,12 @@ var config = {
 		},
 		{
 			"name": "WMS/WFS layers",
-			"layers": ["US_population", "countries"],
+			"layers": ["Klorofil", "countries"],
 			"exclusive": false
 		}
 	],
 	"projections": [
-		{4269: '+proj=longlat +ellps=GRS80 +datum=NAD83 +no_defs '}
+		{4326: '+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs '}
 	],
 	"highlightStyle": {
 		"weight": 2,
@@ -294,16 +294,16 @@ var config = {
 			"maxZoom": 10,
 		},
 		{
-			"id": "US_population",
-			"name": "US Population (WMS)",
+			"id": "Klorofil",
+			"name": "Klorofil (Seanode.id WMS)",
 			"type": "wmsTiledLayer",
-			"url": "https://demo.geo-solutions.it/geoserver/wfs",
-			"layers": "topp:states",
-			'EPSG': 4326,
+			"url": "https://seanode.id/geoserver/wms",
+			"layers": "geonode:chlorophyll",
+			'EPSG': 900913,
       "visible": false,
       "format": 'image/png',
       "transparent": true,
-      "geomField": "the_geom",
+      //"geomField": "the_geom",
       "queryWidget": {
 				"queries" : [
 					{"name": "STATE_NAME", "alias": "Name"},
